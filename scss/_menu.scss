@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -76,7 +76,7 @@
 
         &.show {
             //Slide in from top
-            transform: translate3d(0,0,0)
+            transform: translate3d(0,0,0);
         }
     }
 
@@ -90,7 +90,7 @@
 
         &.show {
             //Slide in from bottom
-            transform: translate3d(0,0,0)
+            transform: translate3d(0,0,0);
         }
 
         .portrait {
@@ -108,7 +108,7 @@
 
         &.show {
             //Slide in from right
-            transform: translate3d(0,0,0)
+            transform: translate3d(0,0,0);
         }
 
         &.current > a {
@@ -123,12 +123,12 @@
         text-transform: uppercase;
         padding: 1rem, 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
         &:hover {
-            color: $secondary-color
+            color: $secondary-color;
         }
     }
 }
